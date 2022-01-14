@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<title>건국대학교 건축대학 학생회</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body
+		style="
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		"
+	>
+	<div class="intro">
+		<img src="image/intro.png" />
+		<div class="header">
+			<div class="search"></div>
+			<div class="nav"></div>
+		</div>
+	</div>
+	<div class="main_banner">
+		<ul>
+			<li>
+				<a href="https://linktr.ee/Ku_arch" target="_blank">
+					<div class="banner">
+						<img src="image/banner_test.jpg" />
+						<span class="banner_text">학생회 링크 모음</span>
+						<span class="screen"></span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<div class="point">
+					<div class="banner">
+						<img src="image/banner_test.jpg" />
+						<span class="banner_text">'늘' 포인트</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="login_form">
+		<section class="main_point_bg">
+			<h1>포인트 정보 확인</h1>
+			<form action="">
+				<div class="int-area">
+					<input type="text" name="id" id="id" autocomplete="off" required />
+					<label for="id">이름</label>
+				</div>
+				<div class="int-area">
+					<input type="password" name="pw" id="pw" autocomplete="off" required />
+					<label for="pw">학번</label>
+				</div>
+				<div class="btn-area">
+					<button id="btn" type="button">LOGIN</button>
+				</div>
+			</form>
+			<div class="close_btn_area">
+				<div class="close_btn">close</div>
+			</div>
+		</section>
+	</div>
+	<div class="npoint">
+		<section class="window">
+			<h2><span class="id-text">나</span>님의 포인트 현황</h2>
+			<form action="">
+				<div class="pop">
+					<div class="point_area" id="left"></div>
+					<div class="point_window">
+						<span class="point_text">누적포인트</span>
+						<span class="point_accu" id="accu"></span>
+					</div>
+					<div class="point_window">
+						<span class="point_text">사용한 포인트</span>
+						<span class="point_used" id="used"></span>
+					</div>
+					<div class="point_window">
+						<span class="point_text">잔여포인트</span>
+						<span class="point_left" id="left"></span>
+					</div>
+				</div>
+			</form>
+			<div class="close_btn">close</div>
+		</section>
+	</div>
+	<div class="slide_wrapper">
+		<ul
+			class="facade"
+			oncontextmenu="return false"
+			ondragstart="return false"
+			onselectstart="return false"
+		>
+			<li>
+				<img src="image/slide1.jpg" />
+			</li>
+			<li>
+				<img src="image/slide2.jpg" />
+			</li>
+			<li>
+				<img src="image/slide3.jpg" />
+			</li>
+			<li>
+				<img src="image/slide4.jpg" />
+			</li>
+			<li>
+				<img src="image/slide5.jpg" />
+			</li>
+			<li>
+				<a href="https://www.instagram.com/p/CXQhddHlAYN/" target="_blank"
+					><img src="image/slide6.jpg"
+				/></a>
+			</li>
+		</ul>
+		<span class="prev">&lt;</span>
+		<span class="next">&gt;</span>
+		<div class="right_screen"></div>
+		<div class="left_screen"></div>
+	</div>
+	<div class="test"></div>
+	<div class="footer" id="footer">
+		<ul>
+			<li>
+				<span class="footer_text1">학생회실 위치</span>
+				<span class="footer_text1_1">서울특별시 광진구 능동로 120 건국대학교 건축대학 A105</span>
+			</li>
+			<li>
+				<span class="footer_text2">학생회장 : 이동하</span>
+				<span class="footer_text2_1">연락처 : 010-xxxx-xxxx</span>
+			</li>
+			<li>
+				<span class="footer_text3">사이트 개발 및 담당 : 김효수</span>
+				<span class="footer_text3_1">연락처 : 010-xxxx-xxxx</span>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ku_arch/" target="_blank">인스타그램</a>
+				<a href="https://www.facebook.com/groups/KuArchi/" target="_blank">페이스북</a>
+				<a href="https://m.cafe.naver.com/caku2022.cafe?" target="_blank">네이버 카페</a>
+			</li>
+			<li>
+				<div class="footer_text4">건국대학교 건축대학 제53대 학생회 오:늘</div>
+			</li>
+			<li>
+				<div class="footer_text5">Copyright © 2022 SCCAKU. All Right Reserved.</div>
+			</li>
+		</ul>
+	</div>
+
+		<div id="tawk_61d626e5b84f7301d3298f36"></div>
+		<div id="tawk_61d626e5b84f7301d3298f36"></div>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {},
+				Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement('script'),
+					s0 = document.getElementsByTagName('script')[0];
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/61d626e5b84f7301d3298f36/1fomdcvau';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin', '*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+	</body>
+</html>
