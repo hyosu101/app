@@ -16,15 +16,11 @@ html {font-size: 62.5%;}
 	user-select:all };
 
 /* -----------------------------------intro---------------------------------------- */
-.intro {
-	
-	} 
+.intro {} 
 .intro > img {
 	position: static;
 	height:auto;
 	width:100vw;
-}
-.header {
 }
 /* -----------------------------------container---------------------------------------- */
 /* banner */
@@ -34,7 +30,7 @@ ul {
 }
 .banner {
 	position:relative;
-	display:inline-block;
+	display:block;
 }
 .banner img{
 	width:100vw;
@@ -91,16 +87,13 @@ ul {
 	opacity:0;
 	transition:all .8s;
 }
-.main_banner ul > li > a:hover .screen::after {
+.main_banner ul > li:hover .screen::after {
 	opacity:1;
 }
-.main_banner ul > li > div.point:hover .screen::after {
-	opacity:1;
-}
-.main_banner ul > li > div.point {
+.main_banner ul > li {
 	cursor: pointer;
 }
-/*------------------------------------------------ login -----------------------------------------------------*/
+/*------------------------------------------------ 포인트 정보입력화면 -----------------------------------------------------*/
 .login_form {
 	display: none;
 	justify-content: center;
@@ -165,7 +158,6 @@ ul {
 	border-radius: 2.5rem;
 	cursor: pointer;
 }
-.close_btn_area {margin-top: 2rem;}
 .close_btn {
 	text-align: center;
 	cursor: pointer;
@@ -175,10 +167,11 @@ ul {
     margin-right: 15rem;
 }
 .close_btn:hover {
+	margin: 2rem;
 	color: #fff;
 	transition:all .8s;
 }
-/* ----------------------------------------------------npoint------------------------------------------ */
+/* ----------------------------------------------------포인트 정보화면------------------------------------------ */
 .npoint {
 	display: none;
 	justify-content: center;
@@ -253,7 +246,7 @@ ul {
 	font-size: 1.2rem; 
 	color: #fff;
 }
-/*-----------------------------------------------facade----------------------*/
+/*----------------------------------------------파사드------------------------------------*/
 .slide_wrapper{
 	position: relative;
 	width: 100vw;
@@ -280,22 +273,22 @@ ul {
 }
 .prev{
 	top: 9vw;
-	font-size: 10vw;
+	margin-left: 25vw;
 	position:relative;
-	margin-left:25vw;
-	color: #fff;
 	z-index:10;
 	cursor:pointer;
 }
 .next{
 	top: 9vw;
-	font-size: 10vw;
+	margin-right: 25vw;
 	position:relative;
-	margin-right:25vw;
 	float:right;
-	color: #fff;
 	z-index:10;
 	cursor:pointer;
+}
+.arrow{
+	width: 5vw;
+	height: auto;
 }
 .left_screen{
 	position:absolute;
@@ -317,16 +310,16 @@ ul {
 	right:0;
 	background-color: rgba(0,0,0,.5);
 }
-/*------------------------------------테스트-----------------------------------------*/
-.test {
-	content: "";
-	height: 30vw;
-	background-color: #fff;
-	margin: 0 auto;
-	top:0;
-	left:0;
+/*---------------------------------------------------제휴업체--------------------------------------------------*/
+.Back_affiliate{
+	display: none;
+	content:"";
+	width: 100vw;
+	height: 100vh;
+	background-color: #E07E66;
 }
-/*---------------------------------------------------footer------------------------------------------------------*/
+
+/*---------------------------------------------------푸터------------------------------------------------------*/
 .footer {
 	background-color: #E07E66;
 	text-align: center;

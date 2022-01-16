@@ -1,16 +1,23 @@
 $(document).ready(function(){
+
+	const show = {"display" : "block"};
+	const hide = {"display" : "none"};
+	
 	$(".point").click(function(){
 		$(".login_form").css({"display" : "flex"});
-		$(".intro").css({"display" : "none"});
-		$(".banner").css({"display" : "none"});
-		$(".slide_wrapper").css({"display" : "none"});
+		$(".intro").css(hide);
+		$(".banner").css(hide);
+		$(".slide_wrapper").css(hide);
+		$(".footer").css(hide);
 	});
 	$(".close_btn").click(function(){
-		$(".login_form").css({"display" : "none"});
-		$(".npoint").css({"display" : "none"});
-		$(".intro").css({"display" : "block"});
-		$(".banner").css({"display" : "inline-block"});
-		$(".slide_wrapper").css({"display" : "block"});
+		$(".login_form").css(hide);
+		$(".npoint").css(hide);
+		$(".Back_affiliate").css(hide);
+		$(".intro").css(show);
+		$(".banner").css(show);
+		$(".slide_wrapper").css(show);
+		$(".footer").css(show);
 	});
 	var id = $('#id');
 	var pw = $('#pw');
@@ -31,7 +38,7 @@ $(document).ready(function(){
 			},1500);
 		}
 		else if($(id).val() == "김효수" && $(pw).val() == "201810458") {
-			$(".login_form").css({"display" : "none"});
+			$(".login_form").css(hide);
 			$(".npoint").css({"display" : "flex"});
 			$(".id-text").css({"color" : "#fff"});
 		const name = $(id).val();
@@ -41,6 +48,7 @@ $(document).ready(function(){
 			alert("정보가 일치하지 않습니다.");
 		}
 	});
+/*--------------------------------------------- 데이터 베이스 만들기 전까지 수정 x---------------------------------------- */
 const accu = "10";
 const used = "5";
 const left = accu - used;
@@ -75,14 +83,14 @@ function makeClone(){
 	
 	setTimeout(function(){
 		slides.classList.add('animated');
-	},100);
+	}, 100);
 	
 	
 }
 function updatWidth(){
 	var currentSlides = document.querySelectorAll('.facade li');
 	var newSlideCount = currentSlides.length;
-	
+	var timer = undefined;
 	var newWidth = slideWidth*newSlideCount +'vw';
 	slides.style.width = newWidth;
 }
@@ -110,7 +118,7 @@ function moveSlide(num){
 		}, 500);
 		setTimeout(function(){
 			slides.classList.add('animated');
-		}, 510);
+		}, 700);
 	}
 }
 
@@ -118,4 +126,11 @@ setInterval(function(){
 	var nextIdx = (currentIdx + 1);
 	moveSlide(nextIdx);
 }, 3000);
+/* -------------------------------------------------------------제휴업체--------------------------------------------------- */
+$(".affiliate").click(function(){
+	$(".Back_affiliate").css({"display" : "flex"});
+	$(".intro").css({"display" : "none"});
+	$(".banner").css({"display" : "none"});
+	$(".slide_wrapper").css({"display" : "none"});
+});
 })

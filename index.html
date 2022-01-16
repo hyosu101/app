@@ -28,6 +28,7 @@
 			user-select: none;
 		"
 	>
+	<!-- 대문 -->
 	<div class="intro">
 		<img src="image/intro.png" />
 		<div class="header">
@@ -35,29 +36,131 @@
 			<div class="nav"></div>
 		</div>
 	</div>
-	<div class="main_banner">
-		<ul>
+	<!-- 파사드 -->
+	<div class="slide_wrapper">
+		<ul
+			class="facade"
+			oncontextmenu="return false"
+			ondragstart="return false"
+			onselectstart="return false"
+		>
 			<li>
-				<a href="https://linktr.ee/Ku_arch" target="_blank">
-					<div class="banner">
-						<img src="image/banner_test.jpg" />
-						<span class="banner_text">학생회 링크 모음</span>
-						<span class="screen"></span>
-					</div>
+				<a href="https://www.instagram.com/p/CWkpBI1FuFl/" target="_blank">
+					<img src="image/slide1.jpg" />
 				</a>
 			</li>
 			<li>
+				<a href="https://www.instagram.com/p/CWpzn0ll3OJ/" target="_blank">
+					<img src="image/slide2.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/p/CXDB8lvLFBt/" target="_blank">
+					<img src="image/slide3.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/p/CXQhddHlAYN/" target="_blank">
+					<img src="image/slide4.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/p/CYoPdLQrLzg/" target="_blank">
+					<img src="image/slide5.jpg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/p/CYtGckYL4AY/" target="_blank">
+					<img src="image/slide6.jpg"/>
+				</a>
+			</li>
+		</ul>
+		<span class="prev">
+			<img class= arrow src="image/left_arrow.png"/>
+		</span>
+		<span class="next">
+			<img class= arrow src="image/right_arrow.png"/>
+		</span>
+		<div class="right_screen"></div>
+		<div class="left_screen"></div>
+	</div>
+	<!-- 배너 -->
+	<div class="main_banner">
+		<ul>
+			<!-- 포인트-배너 -->
+			<li>
 				<div class="point">
 					<div class="banner">
-						<img src="image/banner_test.jpg" />
+						<img src="image/banner_test.png" />
 						<span class="banner_text">'늘' 포인트</span>
 						<span class="screen"></span>
 					</div>
 				</div>
 			</li>
-			<li></li>
+			<!-- 오늘의질문-배너 -->
+			<li>
+				<div class="todayQ">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">'오늘'의 질문</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<!-- 이벤트-배너 -->
+			<li>
+				<div class="event">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">진행중인 이벤트</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<!-- 달력-배너 -->
+			<li>
+				<div class="calendar">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">온라인캘린더</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<!-- 제휴업체-배너 -->
+			<li>
+				<div class="affiliate">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">제휴업체</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<!-- 공약-배너 -->
+			<li>
+				<div class="promise">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">공약이행도</span>
+						<span class="screen"></span>
+					</div>
+				</div>
+			</li>
+			<!-- 링크모음-배너 -->
+			<li>
+				<a href="https://linktr.ee/Ku_arch" target="_blank">
+					<div class="banner">
+						<img src="image/banner_test.png" />
+						<span class="banner_text">학생회 링크 모음</span>
+						<span class="screen"></span>
+					</div>
+				</a>
+			</li>
+			
 		</ul>
 	</div>
+	<!-- 포인트-정보입력화면 -->
 	<div class="login_form">
 		<section class="main_point_bg">
 			<h1>포인트 정보 확인</h1>
@@ -74,11 +177,10 @@
 					<button id="btn" type="button">LOGIN</button>
 				</div>
 			</form>
-			<div class="close_btn_area">
-				<div class="close_btn">close</div>
-			</div>
+			<div class="close_btn">close</div>
 		</section>
 	</div>
+	<!-- 포인트-정보화면 -->
 	<div class="npoint">
 		<section class="window">
 			<h2><span class="id-text">나</span>님의 포인트 현황</h2>
@@ -102,50 +204,14 @@
 			<div class="close_btn">close</div>
 		</section>
 	</div>
-	<div class="slide_wrapper">
-		<ul
-			class="facade"
-			oncontextmenu="return false"
-			ondragstart="return false"
-			onselectstart="return false"
-		>
-			<li>
-				<a href="https://www.instagram.com/p/CTHPsAdFNfP/" target="_blank">
-					<img src="image/slide1.jpg" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/p/CVfNyRkPaet/" target="_blank">
-					<img src="image/slide2.jpg" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/p/CWkpBI1FuFl/" target="_blank">
-					<img src="image/slide3.jpg" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/p/CWpzn0ll3OJ/" target="_blank">
-					<img src="image/slide4.jpg" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/p/CXDB8lvLFBt/" target="_blank">
-					<img src="image/slide5.jpg" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/p/CXQhddHlAYN/" target="_blank">
-					<img src="image/slide6.jpg"/>
-				</a>
-			</li>
+	<!-- 제휴업체-화면 -->
+	<div class="Back_affiliate">
+		<ul>
+			<li></li>
 		</ul>
-		<span class="prev">&lt;</span>
-		<span class="next">&gt;</span>
-		<div class="right_screen"></div>
-		<div class="left_screen"></div>
+		<div class="close_btn">close</div>
 	</div>
-	<div class="test"></div>
+	<!-- 푸터 -->
 	<div class="footer" id="footer">
 		<ul>
 			<li>
@@ -158,7 +224,8 @@
 			</li>
 			<li>
 				<span class="footer_text3">사이트 개발 및 담당 : 김효수</span>
-				<span class="footer_text3_1">연락처 : 010-xxxx-xxxx</span>
+				<span class="footer_text3_1">연락처 : 010-2629-6378</span>
+				<span class="footer_text3_2">이메일 : khs0603@konkuk.ac.kr</span>
 			</li>
 			<li>
 				<a href="https://www.instagram.com/ku_arch/" target="_blank">인스타그램</a>
