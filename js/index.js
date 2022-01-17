@@ -2,15 +2,8 @@ $(document).ready(function(){
 
 	const show = {"display" : "block"};
 	const hide = {"display" : "none"};
-	
-	$(".point").click(function(){
-		$(".login_form").css({"display" : "flex"});
-		$(".intro").css(hide);
-		$(".banner").css(hide);
-		$(".slide_wrapper").css(hide);
-		$(".footer").css(hide);
-	});
-	$(".close_btn").click(function(){
+
+	function home() {
 		$(".login_form").css(hide);
 		$(".npoint").css(hide);
 		$(".Back_affiliate").css(hide);
@@ -18,7 +11,21 @@ $(document).ready(function(){
 		$(".banner").css(show);
 		$(".slide_wrapper").css(show);
 		$(".footer").css(show);
-	});
+	};
+	
+	function GoToPoint() {
+		$(".login_form").css({"display" : "flex"});
+		$(".intro").css(hide);
+		$(".banner").css(hide);
+		$(".slide_wrapper").css(hide);
+		$(".footer").css(hide);
+	}
+
+	$(".close_btn").click(home);
+	$(".ud_home").click(home);
+	$(".point").click(GoToPoint);
+	$(".ud_point").click(GoToPoint);
+
 	var id = $('#id');
 	var pw = $('#pw');
 	let btn = $('#btn');

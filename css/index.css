@@ -16,7 +16,9 @@ html {font-size: 62.5%;}
 	user-select:all };
 
 /* -----------------------------------intro---------------------------------------- */
-.intro {} 
+.intro {
+	width: 100%;
+} 
 .intro > img {
 	position: static;
 	height:auto;
@@ -246,7 +248,7 @@ ul {
 	font-size: 1.2rem; 
 	color: #fff;
 }
-/*----------------------------------------------파사드------------------------------------*/
+/*--------------------------------------------------파사드---------------------------------------------------*/
 .slide_wrapper{
 	position: relative;
 	width: 100vw;
@@ -256,9 +258,9 @@ ul {
 }
 
 .facade {
-	
 	position: absolute;
-	left:0; top:0;
+	left:0;
+	top:0;
 }
 .facade.animated{
 	transition: 0.5s ease-out;
@@ -323,6 +325,7 @@ ul {
 .footer {
 	background-color: #E07E66;
 	text-align: center;
+	width: 100vw;
 	padding: 3vh 5vw;
 	font-size: 1rem;
 }
@@ -353,4 +356,36 @@ ul {
 	top: 0.33rem;
 }
 .footer a:first-child:before { width: 0;}
-
+/* -------------------------------------------------하단 바------------------------------------------------- */
+.gap {
+	content: "";
+	position: relative;
+	width: 100%;
+	height: 15vw;
+	background-color: #E07E66;
+}
+.under_bar {
+	border-top: 0.5vw solid #000;
+	position: fixed;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	background-color: #E07E66;
+	z-index: 1000;
+}
+.under_bar ul li {
+	text-align: center;
+	float: left;
+	width: 20vw;
+}
+.under_bar ul li img {
+	cursor:pointer;
+	width: 70%;
+	bottom: 0;
+}
+.under_bar ul li div {
+	padding-top: 1vh;
+	color: #fff;
+	font-size: 1rem;
+}
