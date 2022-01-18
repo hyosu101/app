@@ -1,7 +1,16 @@
 $(document).ready(function(){
 
+// -----------------------하단바 및 화면 전환 시작점
 	const show = {"display" : "block"};
 	const hide = {"display" : "none"};
+
+	function DoorClose() {
+		document.getElementById("ud_point").src = "image/closedD.png";
+		document.getElementById("ud_affiliate").src = "image/closedD.png";
+		document.getElementById("ud_home").src = "image/closedD.png";
+		document.getElementById("ud_calendar").src = "image/closedD.png";
+		document.getElementById("ud_link").src = "image/closedD.png";
+	};
 
 	function home() {
 		$(".login_form").css(hide);
@@ -11,6 +20,8 @@ $(document).ready(function(){
 		$(".banner").css(show);
 		$(".slide_wrapper").css(show);
 		$(".footer").css(show);
+		DoorClose();
+		document.getElementById("ud_home").src = "image/openedD.png";
 	};
 	
 	function GoToPoint() {
@@ -19,13 +30,34 @@ $(document).ready(function(){
 		$(".banner").css(hide);
 		$(".slide_wrapper").css(hide);
 		$(".footer").css(hide);
-	}
+		DoorClose();
+		document.getElementById("ud_point").src = "image/openedD.png";
+	};
+
+	function GoToaffiliate() {
+		DoorClose();
+		document.getElementById("ud_affiliate").src = "image/openedD.png";
+	};
+
+	function GoTocalendar() {
+		DoorClose();
+		document.getElementById("ud_calendar").src = "image/openedD.png";
+	};
+
+	function GoTolink() {
+		DoorClose();
+		document.getElementById("ud_link").src = "image/openedD.png";
+	};
 
 	$(".close_btn").click(home);
-	$(".ud_home").click(home);
-	$(".point").click(GoToPoint);
 	$(".ud_point").click(GoToPoint);
+	$(".ud_affiliate").click(GoToaffiliate);
+	$(".ud_home").click(home);
+	$(".ud_calendar").click(GoTocalendar);
+	$(".ud_link").click(GoTolink);
 
+// -----------------------하단바 및 화면 전환 끝점
+// -----------------------정보입력 화면 시작점
 	var id = $('#id');
 	var pw = $('#pw');
 	let btn = $('#btn');
@@ -55,7 +87,7 @@ $(document).ready(function(){
 			alert("정보가 일치하지 않습니다.");
 		}
 	});
-/*--------------------------------------------- 데이터 베이스 만들기 전까지 수정 x---------------------------------------- */
+/*-------------- 데이터 베이스 만들기 전까지 수정 x------------- */
 const accu = "10";
 const used = "5";
 const left = accu - used;
@@ -63,7 +95,8 @@ $('.point_accu').text(accu + "p");
 $('.point_used').text(used + "p");
 $('.point_left').text(left + "p");
 $('.point_area').text(left + "p");
-/*-------------------------------------------------------facade------------------------------------------------------------*/	
+// -----------------------정보입력 화면 끝점
+// -----------------------파사드 이미지 슬라이드 시작점
 var slides = document.querySelector('.facade'),
 	slide = document.querySelectorAll('.facade li'),
 	currentIdx = 0,
@@ -133,7 +166,8 @@ setInterval(function(){
 	var nextIdx = (currentIdx + 1);
 	moveSlide(nextIdx);
 }, 3000);
-/* -------------------------------------------------------------제휴업체--------------------------------------------------- */
+// -----------------------파사드 이미지 슬라이드 끝점
+// -----------------------제휴업체 화면 시작점
 $(".affiliate").click(function(){
 	$(".Back_affiliate").css({"display" : "flex"});
 	$(".intro").css({"display" : "none"});
@@ -141,3 +175,4 @@ $(".affiliate").click(function(){
 	$(".slide_wrapper").css({"display" : "none"});
 });
 })
+// -----------------------제휴업체 화면 끝점
