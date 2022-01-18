@@ -5,7 +5,7 @@
     padding:0px;
     text-decoration: none;
     border-collapse: collapse;
-    color: red;
+    color: red; /* 수정시 눈에 띄기 위해*/
     list-style: none;
 }
 html {font-size: 62.5%;}
@@ -315,12 +315,29 @@ ul {
 	background-color: rgba(0,0,0,.5);
 }
 /*---------------------------------------------------제휴업체--------------------------------------------------*/
-.Back_affiliate{
+.Back_affiliate {
 	display: none;
 	content:"";
 	width: 100vw;
-	height: 100vh;
 	background-color: #E07E66;
+	padding-bottom: 10vh;
+}
+.affil_title {
+	color:#fff;
+	font-size: 2.5rem;
+	padding-top: 10vh;
+	margin: 0 0 2vw 5vw;
+	
+}
+.company_name {
+	color:#fff;
+	font-size: 2rem;
+	margin-left: 10vw;
+}
+.Benefits {
+	color:#fff;
+	font-size: 1.5rem;
+	margin: 1vw 0 3vw 10vw;
 }
 
 /*---------------------------------------------------푸터------------------------------------------------------*/

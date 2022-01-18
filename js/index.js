@@ -9,13 +9,22 @@ $(document).ready(function(){
 		document.getElementById("ud_affiliate").src = "image/closedD.png";
 		document.getElementById("ud_home").src = "image/closedD.png";
 		document.getElementById("ud_calendar").src = "image/closedD.png";
-		document.getElementById("ud_link").src = "image/closedD.png";
+		document.getElementById("ud_studecouncil").src = "image/closedD.png";
 	};
 
-	function home() {
+	function AllHide() {
+		$(".intro").css(hide);
+		$(".slide_wrapper").css(hide);
+		$(".banner").css(hide);
 		$(".login_form").css(hide);
 		$(".npoint").css(hide);
 		$(".Back_affiliate").css(hide);
+		$(".footer").css(hide);
+
+	};
+
+	function home() {
+		AllHide();
 		$(".intro").css(show);
 		$(".banner").css(show);
 		$(".slide_wrapper").css(show);
@@ -25,28 +34,29 @@ $(document).ready(function(){
 	};
 	
 	function GoToPoint() {
+		AllHide();
 		$(".login_form").css({"display" : "flex"});
-		$(".intro").css(hide);
-		$(".banner").css(hide);
-		$(".slide_wrapper").css(hide);
-		$(".footer").css(hide);
 		DoorClose();
 		document.getElementById("ud_point").src = "image/openedD.png";
 	};
 
 	function GoToaffiliate() {
+		AllHide();
+		$(".Back_affiliate").css(show);
 		DoorClose();
 		document.getElementById("ud_affiliate").src = "image/openedD.png";
 	};
 
 	function GoTocalendar() {
+		AllHide();
 		DoorClose();
 		document.getElementById("ud_calendar").src = "image/openedD.png";
 	};
 
-	function GoTolink() {
+	function GoTostudecouncil() {
+		AllHide();
 		DoorClose();
-		document.getElementById("ud_link").src = "image/openedD.png";
+		document.getElementById("ud_studecouncil").src = "image/openedD.png";
 	};
 
 	$(".close_btn").click(home);
@@ -54,7 +64,7 @@ $(document).ready(function(){
 	$(".ud_affiliate").click(GoToaffiliate);
 	$(".ud_home").click(home);
 	$(".ud_calendar").click(GoTocalendar);
-	$(".ud_link").click(GoTolink);
+	$(".ud_studecouncil").click(GoTostudecouncil);
 
 // -----------------------하단바 및 화면 전환 끝점
 // -----------------------정보입력 화면 시작점
@@ -167,12 +177,4 @@ setInterval(function(){
 	moveSlide(nextIdx);
 }, 3000);
 // -----------------------파사드 이미지 슬라이드 끝점
-// -----------------------제휴업체 화면 시작점
-$(".affiliate").click(function(){
-	$(".Back_affiliate").css({"display" : "flex"});
-	$(".intro").css({"display" : "none"});
-	$(".banner").css({"display" : "none"});
-	$(".slide_wrapper").css({"display" : "none"});
-});
 })
-// -----------------------제휴업체 화면 끝점
