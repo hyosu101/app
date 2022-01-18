@@ -15,20 +15,23 @@ $(document).ready(function(){
 	function AllHide() {
 		$(".intro").css(hide);
 		$(".slide_wrapper").css(hide);
-		$(".banner").css(hide);
+		$(".main_banner").css(hide);
 		$(".login_form").css(hide);
 		$(".npoint").css(hide);
 		$(".Back_affiliate").css(hide);
+		$(".calendar").css(hide);
+		$(".studecouncil").css(hide);
 		$(".footer").css(hide);
-
+		$(".gap").css(hide);
 	};
 
 	function home() {
 		AllHide();
 		$(".intro").css(show);
-		$(".banner").css(show);
+		$(".main_banner").css(show);
 		$(".slide_wrapper").css(show);
 		$(".footer").css(show);
+		$(".gap").css(show);
 		DoorClose();
 		document.getElementById("ud_home").src = "image/openedD.png";
 	};
@@ -43,18 +46,21 @@ $(document).ready(function(){
 	function GoToaffiliate() {
 		AllHide();
 		$(".Back_affiliate").css(show);
+		$(".gap").css(show);
 		DoorClose();
 		document.getElementById("ud_affiliate").src = "image/openedD.png";
 	};
 
 	function GoTocalendar() {
 		AllHide();
+		$(".calendar").css(show);
 		DoorClose();
 		document.getElementById("ud_calendar").src = "image/openedD.png";
 	};
 
 	function GoTostudecouncil() {
 		AllHide();
+		$(".studecouncil").css(show);
 		DoorClose();
 		document.getElementById("ud_studecouncil").src = "image/openedD.png";
 	};
