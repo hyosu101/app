@@ -16,6 +16,8 @@ $(document).ready(function(){
 		$(".intro").css(hide);
 		$(".slide_wrapper").css(hide);
 		$(".main_banner").css(hide);
+		$(".question_board").css(hide);
+		$(".event_board").css(hide);
 		$(".login_form").css(hide);
 		$(".npoint").css(hide);
 		$(".Back_affiliate").css(hide);
@@ -36,6 +38,17 @@ $(document).ready(function(){
 		document.getElementById("ud_home").src = "image/openedD.png";
 	};
 	
+	function GoToTodayQ() {
+		AllHide();
+		$(".question_board").css(show);
+		DoorClose();
+	};
+	function GoToEvent() {
+		AllHide();
+		$(".event_board").css(show);
+		DoorClose();
+	};
+
 	function GoToPoint() {
 		AllHide();
 		$(".login_form").css({"display" : "flex"});
@@ -66,6 +79,8 @@ $(document).ready(function(){
 	};
 
 	$(".close_btn").click(home);
+	$(".todayQ").click(GoToTodayQ);
+	$(".event").click(GoToEvent);
 	$(".ud_point").click(GoToPoint);
 	$(".ud_affiliate").click(GoToaffiliate);
 	$(".ud_home").click(home);

@@ -35,6 +35,7 @@ ul {
 .banner {
 	position:relative;
 	display:block;
+	margin-bottom: 2vw;
 }
 .banner img{
 	width:100vw;
@@ -111,9 +112,15 @@ ul {
 	top:0; right: 0; bottom: 0; left: 0;
 	background-color: #E07E66;
 }
-.main_point_bg {position: relative; z-index: 2;}
+.main_point_bg {
+	position: relative;
+	z-index: 2;
+	padding: 5vw;
+	border-radius: 2.5rem;
+	background-color: #fff;
+}
 .main_point_bg h1 {
-	font-size: 3.2rem; color: #fff;
+	font-size: 3.2rem; color: #E07E66;
 	text-align: center;
 	margin-bottom: 3rem;
 }
@@ -127,13 +134,13 @@ ul {
 	padding: 2rem 1rem 1rem;
 	background-color: transparent;
 	border: none;
-	border-bottom: 0.1rem solid #fff;
-	font-size: 1.8rem; color: #fff;
+	border-bottom: 0.1rem solid #E07E66;
+	font-size: 1.8rem; color: #E07E66;
 	outline: none;
 }
 .int-area label {
 	position: absolute; left: 1rem; top: 1.5rem;
-	font-size: 1.8rem; color: #fff;
+	font-size: 1.8rem; color: #E07E66;
 	transition: all .5s ease;
 }
 .int-area label.warning {
@@ -150,12 +157,12 @@ ul {
 .int-area input:focus + label,
 .int-area input:valid + label {
 	top:-0.2rem;
-	font-size: 1.3rem; color: #166cea;
+	font-size: 1.3rem; color: #E07E66;
 }
 .btn-area {margin-top: 3rem;}
 .btn-area button {
 	width: 100%; height: 5rem;
-	background: #166cea;
+	background: #E07E66;
 	color: #fff;
 	font-size: 2rem;
 	border: none;
@@ -166,7 +173,7 @@ ul {
 	text-align: center;
 	cursor: pointer;
 	font-size: 2rem;
-	color: #fff;
+	color: #E07E66;
 	margin-left: 15rem;
     margin-right: 15rem;
 }
@@ -255,7 +262,7 @@ ul {
 	position: relative;
 	width: 100vw;
 	height: 33.3vw;
-	margin: 0 auto;
+	margin-bottom: 2vw;
 	overflow: hidden;
 }
 
@@ -314,6 +321,40 @@ ul {
 	right:0;
 	background-color: rgba(0,0,0,.5);
 }
+/*---------------------------------------------------질문게시판--------------------------------------------------*/
+.question_board {
+	display: none;
+}
+.question {
+	color:#000;
+	font-size: 2rem;
+	padding-top: 10vh;
+	margin: 0 0 2vw 5vw;
+}
+.answer {
+	color:#000;
+	font-size: 1.5rem;
+	margin: 1vw 0 3vw 5vw;
+
+}
+/*---------------------------------------------------이벤트게시판--------------------------------------------------*/
+.event_board {
+	display: none;
+}
+.event_board ul {
+	display: flex;
+}
+.event_board li {
+	flex: 1;
+	float: left;
+}
+.event_board a {
+	border: 1px solid #000;
+	color: #000;
+	font-size: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
 /*---------------------------------------------------제휴업체--------------------------------------------------*/
 .Back_affiliate {
 	display: none;
@@ -322,22 +363,28 @@ ul {
 	background-color: #E07E66;
 	padding-bottom: 10vh;
 }
+.Back_affiliate li {
+	margin-left: 10vw;
+	width: 80%;
+	border-radius: 2rem;
+	padding: 2vw;
+	margin-bottom: 2vh;
+	background-color: #fff;
+}
 .affil_title {
 	color:#fff;
 	font-size: 2.5rem;
 	padding-top: 10vh;
-	margin: 0 0 2vw 5vw;
+	margin: 0 0 3vw 10vw;
 	
 }
 .company_name {
-	color:#fff;
+	color:#000;
 	font-size: 2rem;
-	margin-left: 10vw;
 }
 .Benefits {
-	color:#fff;
+	color:#000;
 	font-size: 1.5rem;
-	margin: 1vw 0 3vw 10vw;
 }
 /*---------------------------------------------------캘린더--------------------------------------------------*/
 .calendar {
